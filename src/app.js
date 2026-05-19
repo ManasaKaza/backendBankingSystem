@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/", (req, res) => {
-    res.send("Heellllooooo!!!!!! \n Backend-system is up and running!!!");
+    res.send("Heellllooooo!!!!!! <br> Backend-system is up and running!!!");
 })
 app.use("/api/auth", authRouter);
 app.use("/api/accounts", accountRouter);
